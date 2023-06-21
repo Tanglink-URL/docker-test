@@ -1,20 +1,20 @@
-FROM node:20
+FROM node:20  
 
 
-WORKDIR /app
+WORKDIR /app  
 
-COPY package*.json ./
+COPY package*.json ./  
 
-RUN npm install
-
-
-COPY . .
+RUN npm install  
 
 
-ENV PORT=8080
-
-EXPOSE 8080
+COPY . .  
 
 
-CMD ["npm", "start"]
+ENV PORT=8080  
+  
+EXPOSE 8080  
+
+
+CMD ["npm", "start"]  
 
